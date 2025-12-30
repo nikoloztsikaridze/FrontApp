@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Web Frontend</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      color: #333;
+    }
+    header {
+      background: #2563eb;
+      color: white;
+      padding: 1rem 2rem;
+    }
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      margin-bottom: 1.5rem;
+    }
+    button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    button:hover {
+      background: #1e4ed8;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Simple Web App</h1>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Welcome 👋</h2>
+      <p>This is a very simple frontend built with HTML, CSS, and JavaScript.</p>
+      <button onclick="sayHello()">Click me</button>
+    </div>
+
+    <div class="card" id="output">
+      <h3>Output</h3>
+      <p>Nothing yet.</p>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Simple Frontend
+  </footer>
+
+  <script>
+    function sayHello() {
+      document.getElementById('output').innerHTML = `
+        <h3>Output</h3>
+        <p>Hello! You just clicked the button 🚀</p>
+      `;
+    }
+  </script>
+</body>
+</html>
